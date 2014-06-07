@@ -427,6 +427,7 @@ function route_prepare_data(data, script_name_prefix, url_parts)
     {
     case 'vtc':
       data['currency'] = 'Vertcoin';
+      data['title_details'] = 'Block Explorer';
       data['currency_short'] = 'VTC';
       data['script_name'] = script_name_prefix + 'vtc';
       data['default_fees'] = 0.001;
@@ -631,11 +632,20 @@ function route_search(currency, search_value, redirect_callback) {
 </script>
 	</div>
 </div>
-
+<hr />
 <p>
   <center>
-  Please help support development and server cost:<br style='clear:both;'/><br style='clear:both;'/>
+  <b>Please help support this server:<br style='clear:both;'/><br style='clear:both;'/>
   VTC: <a href="#/vtc/address/VgsLqV3BFb1SmaMQbQgdfeuWqJgfnrhFyE">VgsLqV3BFb1SmaMQbQgdfeuWqJgfnrhFyE</a><br style='clear:both;'/>
+  </b>
+  </center>
+  <br /><br />
+  <center>
+  Support the original developer:<br style='clear:both;'/><br style='clear:both;'/>
+  BTC: <a href="#/btc/address/1LLqMFskaSaZ3w2LuH6dbQaULcy1Bu1b2R">1LLqMFskaSaZ3w2LuH6dbQaULcy1Bu1b2R</a><br style='clear:both;'/>
+  PPC: <a href="#/ppc/address/PEiZ7r4KR85izAhfzQKJgJxdQkQ6PPXXEX">PEiZ7r4KR85izAhfzQKJgJxdQkQ6PPXXEX</a><br style='clear:both;'/>
+  LTC: <a href="#/ltc/address/LXzHvrRMQVEHj6gvK4rsZ7HGopgqfxS7PS">LXzHvrRMQVEHj6gvK4rsZ7HGopgqfxS7PS</a><br style='clear:both;'/>
+  DOGE: <a href="#/doge/address/DLm1XX5JcxQeGL5nXmkFCMJXCorcFQXRnT">DLm1XX5JcxQeGL5nXmkFCMJXCorcFQXRnT</a>
   </center>
   <br/>
   <center><a href="mailto:blockexplorer@sovereignshare.com">Contact</a> - <a href="https://github.com/a432511/bkchain.org">Source code + Static version</a></center>
