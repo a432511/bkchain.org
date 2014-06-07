@@ -9,6 +9,14 @@ function route_prepare_data(data, script_name_prefix, url_parts)
     // Parse currency (first part of URL -- default to BTC)
     switch (currency)
     {
+    case 'vtc':
+      data['currency'] = 'Vertcoin';
+      data['currency_short'] = 'VTC';
+      data['script_name'] = script_name_prefix + 'vtc';
+      data['default_fees'] = 0.0001;
+      data['address_version'] = 0;
+      data['donation_address'] = "VgsLqV3BFb1SmaMQbQgdfeuWqJgfnrhFyE";
+      break;
     case 'ltc':
       data['currency'] = 'Litecoin';
       data['currency_short'] = 'LTC';
@@ -165,6 +173,9 @@ function route_search(currency, search_value, redirect_callback) {
         break;
       case 'D':
         redirect_callback('doge/address/' + search_value);
+        break;
+      case 'V':
+	redirect_callback('vtc/address/' + search_value);
         break;
       default:
         throw 'Invalid address type';
